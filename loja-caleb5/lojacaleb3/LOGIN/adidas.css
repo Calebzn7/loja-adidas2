@@ -1,0 +1,166 @@
+/* 1. Reset Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+.barra {
+    display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  margin-top: 40px;
+}
+
+.search {
+  width: 280px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+  display: flex;
+}
+
+.search:focus {
+  border-color: #000000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
+
+/* Header */
+header {
+    background-color: #000;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    background-color: #ddd;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.banner h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Seção de Produtos */
+.produtos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    margin-bottom: 30px;
+}
+
+/* Container de Cards (Centralizado) */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do Card individual */
+.card {
+    background-color: #ffffff;
+    width: 260px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagens dos Produtos */
+.foto {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Textos do Card */
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
